@@ -32,6 +32,11 @@ jobs:
       - name: Build Docker image
         run: docker build -t monitoring-demo:${{ github.sha }} ./app
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+
       - name: Terraform format check
         working-directory: terraform
         run: |
