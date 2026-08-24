@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: monitoring-demo
+  namespace: monitoring-demo
+  labels:
+    app: monitoring-demo
+spec:
+  selector:
+    app: monitoring-demo
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+  type: ClusterIP

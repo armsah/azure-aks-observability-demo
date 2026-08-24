@@ -1,0 +1,7 @@
+Flask==3.1.2
+prometheus-flask-exporter==0.23.2
+opentelemetry-api==1.36.0
+opentelemetry-sdk==1.36.0
+opentelemetry-instrumentation-flask==0.57b0
+azure-monitor-opentelemetry-exporter==1.0.0b42
+gunicorn==23.0.0
